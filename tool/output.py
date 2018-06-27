@@ -7,7 +7,7 @@ def writeFile(filename,data):
         mkdir(dirname)
     except Exception as e:
         print(e)
-    with open(filename, 'w') as file_obj:
+    with open(filename, 'w',encoding='utf-8') as file_obj:
         json.dump(data, file_obj,ensure_ascii=False)
 def mkdir(path):
     path = path.strip()
