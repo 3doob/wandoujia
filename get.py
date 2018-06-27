@@ -12,5 +12,5 @@ if __name__ == "__main__":
         TCtrack = get_TCtrack(item.get('Link'))
         list = item_paraser(TCtrack)
         item['item-details'] = list
-
+        print(item)
     writeFile('./output', lists)
